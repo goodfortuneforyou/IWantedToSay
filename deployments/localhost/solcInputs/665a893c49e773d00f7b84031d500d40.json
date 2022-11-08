@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/IWantedToSay.sol": {
+      "content": "//SPDX-License-Identifier:MIT\npragma solidity ^0.8.8;\n\ncontract IWantedToSay {\n    function quotes() public pure returns (string memory) {\n        return (\n            \"Sing like no one's listening, love like you've never been hurt, dance like nobody's watching, and live like it's heaven on earth.\"\n        );\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
